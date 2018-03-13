@@ -99,7 +99,7 @@ alert ("Login successfully");
 window.location = "home.html"; // Redirecting to other page.
 return false;
 }
-else if (username != "septri" || password != "123"){
+if (username != "septri" || password != "123"){
 	attempt --;
 	alert ("Username atau Password Salah!");
 	return false;
