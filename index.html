@@ -7,57 +7,21 @@
 <meta name="keywords" content="Septri Putra Wiarka, Universitas Sriwijaya, unsri, teknik informatika unsri, fasilkom unsri, My Data a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns" />
  <link rel="shortcut icon" href="webicon.ico" type="image/x-icon" />
-
-
-
-	<style type="text/css">
-		/* Below line is used for online Google font */
-
-body{
-	text-align: center;
-	background-color: gray;
-		
-h2{
-background-color: #FEFFED;
-text-align:center;
-border-radius: 10px 10px 0 0;
-}
+<style type="text/css">
+			.text{
+				margin-top: auto;
+			}
+			body {
+				text-align: center;background-color: blue;color: white;
+			}
+			button {
+				border: 10px solid #73AD21;backgroundlinear-gradient(#ffbc00 5%, #ffdd7f 100%);color: white;padding: 8px;border-radius: 8px;border-color: blue;font-weight: bold;cursor: pointer;;
+			}
+			.container {
+				margin: auto;margin-top: 150px;width: 40%;border: 15px solid #73AD21;padding: 5px;			
+			}
 	
-hr{
-border: 0;
-border-top: 1px solid #ccc;
-}
-	
-div.container{
-width: 35%;
-height: 480px;
-margin: auto;
-border: 15px solid blue;
-font-family: raleway, sans-serif;
-}
-	
-div.main{
-width: 300px;
-padding: 10px 50px 25px;
-border: 2px solid white;
-font-family: raleway;
-float: center;
-}
-
-button {
-	border: 10px solid #73AD21;background-color: black;color: white;padding: 8px;border-radius: 8px;border-color: lightblue;font-weight: bold;
-}	
-	
-input[type=button]{
-background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
-border: 1px solid #e5a900;
-color: #4E4D4B;
-font-weight: bold;
-cursor: pointer;
-width: 75%;
-}
-	
-input[type=button]:hover{
+button:hover{
 background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
 }
 	</style>
@@ -66,28 +30,28 @@ background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
 	
 </head>
 <body>
-	<script type="text/javascript">
-
-		var login = 3; // Variable to count number of attempts.
-// Below function Executes on click of login button.
-function validasi(){
-var username = prompt("Masukkan Username:");
-if ( username == "septri putra wiarka" ){
-alert ("Welcome back "+username+")
-window.location = "home.html" // Redirecting to other page.
-}
-else{
-login --;// Decrementing by one.
-alert("Username salah!")
+	
+		<script>
+			var login = 3;
+			function validasi() {
+			    var person = prompt("Masukkan Username");
+			    if (person == "septri putra wiarka") {
+			    	alert("Welcome Back Owner")
+			        window.location.assign("home.html")
+			    }
+			    else{
+				    login --;// Decrementing by one.
+				    alert("Username salah!")
 // Disabling fields after 3 attempts.
-if( login == 0){
-alert("Silahkan refresh halaman untuk login lagi")
-return false;
-}
-}
-}
+				    if( login == 0){
+					    alert("Silahkan refresh halaman untuk login lagi")
+					    return false;
+				    }
+			    }
+			}
+			
+		</script>
 
-</script>
 
 <div class="container">
 <div class="main">
