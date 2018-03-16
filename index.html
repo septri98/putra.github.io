@@ -12,7 +12,6 @@ Smartphone Compatible web template, free webdesigns" />
 
 	<style type="text/css">
 		/* Below line is used for online Google font */
-@import url(http://fonts.googleapis.com/css?family=Raleway);
 
 body{
 	text-align: center;
@@ -23,18 +22,20 @@ background-color: #FEFFED;
 text-align:center;
 border-radius: 10px 10px 0 0;
 }
+	
 hr{
 border: 0;
 border-top: 1px solid #ccc;
-
 }
-.container{
+	
+div.container{
 width: 35%;
 height: 480px;
 margin: auto;
 border: 15px solid blue;
 font-family: raleway, sans-serif;
 }
+	
 div.main{
 width: 300px;
 padding: 10px 50px 25px;
@@ -46,6 +47,7 @@ float: center;
 button {
 	border: 10px solid #73AD21;background-color: black;color: white;padding: 8px;border-radius: 8px;border-color: lightblue;font-weight: bold;
 }	
+	
 input[type=button]{
 background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
 border: 1px solid #e5a900;
@@ -54,6 +56,7 @@ font-weight: bold;
 cursor: pointer;
 width: 75%;
 }
+	
 input[type=button]:hover{
 background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
 }
@@ -88,7 +91,9 @@ return false;
 <div class="container">
 <div class="main">
 <h2>Login to web</h2>
-<input type="button" value="Login" id="submit" onclick="validasi()"/>
+	<hr>
+	<button onclick="validasi()">Login</button>
+	<hr>
 </div>
 </div>
 
